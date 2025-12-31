@@ -18,3 +18,10 @@ body {
   color: var(--color-industrial-dark);
   font-family: var(--font-sans);
 }
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translateZ(0);
+}

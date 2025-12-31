@@ -36,21 +36,24 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center w-full">
       <div className="w-full flex justify-center gap-4 p-4 flex-wrap">
-        {/* Note: Make sure images are in public/photos/ */}
-        <div className="relative w-[300px] h-[400px] rounded-lg overflow-hidden shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div className="relative w-[400px] h-[500px] rounded-lg overflow-hidden shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300 backface-hidden will-change-transform">
            <Image 
              src="/photos/Hank&Jamie-99.jpg" 
              alt="Ice cream shot" 
              fill
              className="object-cover"
+             priority
+             sizes="(max-width: 768px) 100vw, 400px"
            />
         </div>
-        <div className="relative w-[300px] h-[400px] rounded-lg overflow-hidden shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
+        <div className="relative w-[400px] h-[500px] rounded-lg overflow-hidden shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300 backface-hidden will-change-transform">
            <Image 
              src="/photos/Hank&Jamie-43.jpg" 
              alt="Hanging Out" 
              fill
              className="object-cover"
+             priority
+             sizes="(max-width: 768px) 100vw, 400px"
            />
         </div>
       </div>
