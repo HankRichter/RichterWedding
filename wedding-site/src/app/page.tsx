@@ -106,7 +106,7 @@ export default function Home() {
       <div className={`transition-opacity duration-700 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
         <section className="relative h-screen w-full">
           <Image 
-            src="/photos/Hank&Jamie-99.jpg" 
+            src="/photos/homepage/Hank&Jamie-99.jpg" 
             alt="Jaime and Hank" 
             fill
             className="object-cover object-center md:object-bottom"
@@ -237,7 +237,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="w-full">
                 <img 
-                  src="/photos/JHTimeline.svg"
+                  src="/photos/homepage/JHTimeline.svg"
                   alt="Jaime and Hank Timeline" 
                   className="w-full h-auto"
                   loading="lazy"

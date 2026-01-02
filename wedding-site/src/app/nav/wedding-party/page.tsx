@@ -7,7 +7,7 @@ export default function WeddingParty() {
 
   const bridesmaids = [
     { name: "Alyssa Rotkiewicz", role: "Matron of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/alyssa.jpg" },
-    { name: "Sarah Castellano", role: "Maid of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/sarah.jpg" },
+    { name: "Sarah Castellano", role: "Maid of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/SarahC.jpeg" },
     { name: "Lauryn Kukic", role: "Bridesmaid", relation: "Friend of the Bride", photo: "/photos/wedding-party/lauryn.jpg" },
     { name: "Brianna Buckley", role: "Bridesmaid", relation: "Sister of the Bride", photo: "/photos/wedding-party/brianna.jpg" },
     { name: "Helene Buckley", role: "Bridesmaid", relation: "Sister-in-law of the Bride", photo: "/photos/wedding-party/helene.jpg" },
