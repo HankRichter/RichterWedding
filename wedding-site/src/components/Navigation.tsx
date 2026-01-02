@@ -9,12 +9,12 @@ export default function Navigation() {
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/schedule', label: 'Schedule' },
-    { href: '/travel', label: 'Travel' },
-    { href: '/wedding-party', label: 'Wedding Party' },
-    { href: '/registry', label: 'Registry' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/faq', label: 'FAQ' },
+    { href: '/nav/schedule', label: 'Schedule' },
+    { href: '/nav/travel', label: 'Travel' },
+    { href: '/nav/wedding-party', label: 'Wedding Party' },
+    { href: '/nav/registry', label: 'Registry' },
+    { href: '/nav/gallery', label: 'Gallery' },
+    { href: '/nav/faq', label: 'FAQ' },
   ];
 
   return (

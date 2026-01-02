@@ -1,3 +1,32 @@
+/* @import "tailwindcss";
+
+:root {
+  --color-industrial-dark: #282B31;
+  --color-industrial-light: #e0e0e0;
+}
+
+@theme inline {
+  --color-primary: var(--color-industrial-dark);
+  --color-secondary: var(--color-industrial-light);
+  
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-industrial-light);
+  color: var(--color-industrial-dark);
+  font-family: var(--font-sans);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translateZ(0);
+} */
+
+
 @import "tailwindcss";
 
 :root {
@@ -24,4 +53,35 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   transform: translateZ(0);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Lazy load fade in */
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
 }
