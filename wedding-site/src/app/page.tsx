@@ -57,6 +57,16 @@ export default function Home() {
 
   const detailCards = [
     {
+      title: 'RSVP',
+      description: 'Let us know if you can make it to celebrate our special day with us.',
+      href: '/nav/rsvp',
+      icon: (
+        <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+    },
+    {
       title: 'Schedule',
       description: 'View the timeline for our special day, from ceremony to celebration.',
       href: '/nav/schedule',
@@ -105,8 +115,7 @@ export default function Home() {
             onLoad={handleImageLoad}
           />
           <div className="absolute inset-0 bg-black/30"></div>
-          
-          <div className="absolute inset-0 flex flex-col items-center justify-center pt-32 md:pb-140 text-white text-center px-4">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pt-32 md:pb-140 xl:pt-100 text-white text-center px-4">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-4 drop-shadow-lg">
               Jaime & Hank
             </h1>
@@ -116,17 +125,17 @@ export default function Home() {
             <p className="text-lg md:text-xl drop-shadow-md">
               Detroit, Michigan
             </p>
-            
-            <div className="absolute bottom-16 animate-bounce">
-              <svg 
-                className="w-8 h-8 text-white" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </div>
+          </div>
+          
+          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 animate-bounce z-10">
+            <svg 
+              className="w-8 h-8 text-white" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
           </div>
         </section>
 
@@ -148,11 +157,11 @@ export default function Home() {
         <section className="py-16 px-4 bg-secondary">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 text-primary">Counting Down</h2>
-            <div className="flex justify-center gap-4 md:gap-8 flex-wrap">
+            <div className="flex justify-center gap-2 md:gap-8">
               {Object.entries(timeLeft).map(([label, value]) => (
-                <div key={label} className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md min-w-[100px]">
-                  <span className="text-4xl md:text-5xl font-bold text-primary">{value}</span>
-                  <span className="text-sm uppercase tracking-wider text-primary/60">{label}</span>
+                <div key={label} className="flex flex-col items-center bg-primary p-3 md:p-6 rounded-lg shadow-md min-w-[70px] md:min-w-0">
+                  <span className="text-2xl md:text-5xl font-bold text-secondary">{value}</span>
+                  <span className="text-[10px] md:text-sm uppercase tracking-wider text-secondary/60">{label}</span>
                 </div>
               ))}
             </div>
@@ -160,7 +169,7 @@ export default function Home() {
         </section>
 
         <section className="relative">
-          <div className="w-full overflow-hidden leading-[0] bg-secondary">
+          <div className="w-full overflow-hidden leading-[0] bg-secondary -mb-[1px]">
             <svg 
               data-name="Layer 1" 
               xmlns="http://www.w3.org/2000/svg" 
@@ -175,27 +184,31 @@ export default function Home() {
           </div>
 
           <div className="bg-primary py-16 px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-serif mb-12 text-center text-secondary">Wedding Details</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="flex flex-col gap-6">
                 {detailCards.map((card) => (
-                  <div 
+                  <Link 
                     key={card.title}
-                    className="bg-secondary/10 backdrop-blur-sm border border-secondary/20 rounded-xl p-8 text-center hover:bg-secondary/20 transition-all duration-300 group"
+                    href={card.href}
+                    className="bg-secondary backdrop-blur-sm border border-secondary rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-8 hover:bg-secondary/90 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 ease-out group cursor-pointer"
                   >
-                    <div className="text-secondary group-hover:scale-110 transition-transform duration-300 flex justify-center">
+                    <div className="text-primary group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 flex-shrink-0">
                       {card.icon}
                     </div>
-                    <h3 className="text-2xl font-serif text-secondary mb-4">{card.title}</h3>
-                    <p className="text-secondary/80 mb-6 leading-relaxed">{card.description}</p>
-                    <Link 
-                      href={card.href}
-                      className="inline-block bg-secondary text-primary px-6 py-3 rounded-full font-medium hover:bg-white transition-colors duration-300 uppercase tracking-wider text-sm"
-                    >
-                      View {card.title}
-                    </Link>
-                  </div>
+                    <div className="text-center md:text-left flex-grow">
+                      <h3 className="text-2xl md:text-3xl font-serif text-primary mb-3 group-hover:tracking-wide transition-all duration-300">
+                        {card.title}
+                      </h3>
+                      <p className="text-primary/80 text-lg leading-relaxed">{card.description}</p>
+                    </div>
+                    <div className="text-primary/60 group-hover:text-primary group-hover:translate-x-2 transition-all duration-300 flex-shrink-0 hidden md:block">
+                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -216,30 +229,18 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="h-20 md:h-28 bg-secondary"></div>
+        {/* <div className="h-20 md:h-28 bg-secondary"></div> */}
 
         <section className="py-16 px-4 bg-secondary">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center text-primary">Our Story</h2>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <div className="relative w-[350px] h-[450px] rounded-lg overflow-hidden shadow-lg transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-                <Image 
-                  src="/photos/Hank&Jamie-99.jpg" 
-                  alt="Jaime and Hank" 
-                  fill
-                  className="object-cover"
+            <div className="flex justify-center">
+              <div className="w-full">
+                <img 
+                  src="/photos/JHTimeline.svg"
+                  alt="Jaime and Hank Timeline" 
+                  className="w-full h-auto"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, 350px"
-                />
-              </div>
-              <div className="relative w-[350px] h-[450px] rounded-lg overflow-hidden shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                <Image 
-                  src="/photos/Hank&Jamie-43.jpg" 
-                  alt="Jaime and Hank" 
-                  fill
-                  className="object-cover"
-                  loading="lazy"
-                  sizes="(max-width: 768px) 100vw, 350px"
                 />
               </div>
             </div>

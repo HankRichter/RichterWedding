@@ -17,7 +17,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-primary text-secondary text-center relative mt-12">
+    <footer className="bg-primary text-secondary text-center relative">
       <section className="relative w-full overflow-hidden leading-[0]">
         <div className="custom-shape-divider-bottom-1764635805">
           <svg 
@@ -35,7 +35,7 @@ export default function Footer() {
       </section>
 
       {isHomePage && (
-        <section className="py-8 px-4 border-b border-secondary/20">
+        <section className="py-8 px-4">
           <nav className="flex flex-wrap justify-center gap-4 md:gap-8">
             {links.map((link) => (
               <Link 
