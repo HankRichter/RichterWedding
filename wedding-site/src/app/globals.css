@@ -1,32 +1,3 @@
-/* @import "tailwindcss";
-
-:root {
-  --color-industrial-dark: #282B31;
-  --color-industrial-light: #e0e0e0;
-}
-
-@theme inline {
-  --color-primary: var(--color-industrial-dark);
-  --color-secondary: var(--color-industrial-light);
-  
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
-}
-
-body {
-  background-color: var(--color-industrial-light);
-  color: var(--color-industrial-dark);
-  font-family: var(--font-sans);
-}
-
-.backface-hidden {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  transform: translateZ(0);
-} */
-
-
 @import "tailwindcss";
 
 :root {

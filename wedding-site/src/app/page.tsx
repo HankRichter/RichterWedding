@@ -47,7 +47,6 @@ export default function Home() {
     setImageLoaded(true);
   }, []);
 
-  // Once both loading animation and image are ready, hide loader
   useEffect(() => {
     if (imageLoaded && !isLoading) return;
     if (imageLoaded) {
@@ -95,7 +94,6 @@ export default function Home() {
       {isLoading && <Loading onLoadingComplete={handleLoadingComplete} />}
       
       <div className={`transition-opacity duration-700 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
-        {/* Hero Section - Full Screen */}
         <section className="relative h-screen w-full">
           <Image 
             src="/photos/Hank&Jamie-99.jpg" 
@@ -106,10 +104,8 @@ export default function Home() {
             sizes="100vw"
             onLoad={handleImageLoad}
           />
-          {/* Overlay for text readability */}
           <div className="absolute inset-0 bg-black/30"></div>
           
-          {/* Hero Content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center pt-32 md:pb-140 text-white text-center px-4">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-4 drop-shadow-lg">
               Jaime & Hank
@@ -121,7 +117,6 @@ export default function Home() {
               Detroit, Michigan
             </p>
             
-            {/* Scroll indicator */}
             <div className="absolute bottom-16 animate-bounce">
               <svg 
                 className="w-8 h-8 text-white" 
@@ -135,7 +130,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Wave transition - Photo shows through the gaps */}
         <div className="relative h-[40px] md:h-[70px] -mt-[40px] md:-mt-[70px] z-10 overflow-hidden">
           <svg 
             data-name="Layer 1" 
@@ -151,7 +145,6 @@ export default function Home() {
         </div>
 
 
-        {/* Countdown Section */}
         <section className="py-16 px-4 bg-secondary">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 text-primary">Counting Down</h2>
@@ -166,9 +159,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Details Cards Section with Curved SVG */}
         <section className="relative">
-          {/* Curved SVG Divider - Top */}
           <div className="w-full overflow-hidden leading-[0] bg-secondary">
             <svg 
               data-name="Layer 1" 
@@ -183,7 +174,6 @@ export default function Home() {
             </svg>
           </div>
 
-          {/* Dark Background Section */}
           <div className="bg-primary py-16 px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-serif mb-12 text-center text-secondary">Wedding Details</h2>
@@ -211,7 +201,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Curved SVG Divider - Bottom (matching footer style, flipped) */}
           <div className="w-full overflow-hidden leading-[0] bg-primary">
             <svg 
               data-name="Layer 1" 
@@ -227,10 +216,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Spacer for bottom curve */}
         <div className="h-20 md:h-28 bg-secondary"></div>
 
-        {/* Photo Gallery Preview with Lazy Loading */}
         <section className="py-16 px-4 bg-secondary">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center text-primary">Our Story</h2>

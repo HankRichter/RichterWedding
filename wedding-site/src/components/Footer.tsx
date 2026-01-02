@@ -34,7 +34,6 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Navigation Links - Only show on homepage */}
       {isHomePage && (
         <section className="py-8 px-4 border-b border-secondary/20">
           <nav className="flex flex-wrap justify-center gap-4 md:gap-8">

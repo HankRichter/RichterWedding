@@ -9,7 +9,7 @@ export default function Loading({ onLoadingComplete }: LoadingProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time or wait for assets
+    // Need to make sure this works on logic being loaded and not just a timer.
     const timer = setTimeout(() => {
       setIsLoading(false);
       onLoadingComplete?.();
@@ -24,7 +24,6 @@ export default function Loading({ onLoadingComplete }: LoadingProps) {
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-secondary transition-opacity duration-500">
       <div className="text-center">
         <div className="relative w-24 h-24 mx-auto mb-6">
-          {/* Animated rings */}
           <div className="absolute inset-0 border-4 border-primary/20 rounded-full"></div>
           <div className="absolute inset-0 border-4 border-transparent border-t-primary rounded-full animate-spin"></div>
         </div>
