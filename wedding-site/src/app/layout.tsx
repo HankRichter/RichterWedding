@@ -27,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${lato.variable}`}>
       <body className="bg-background min-h-screen flex flex-col font-sans">
-        <Navigation />
         <main className="flex-grow">
           {children}
         </main>
