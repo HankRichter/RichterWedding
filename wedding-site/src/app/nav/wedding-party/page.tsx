@@ -2,18 +2,26 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
+interface PartyMember {
+  name: string;
+  role: string;
+  relation: string;
+  photo: string;
+  objectPosition?: string;
+}
+
 export default function WeddingParty() {
   const [activeTab, setActiveTab] = useState<'bridesmaids' | 'groomsmen' | 'kids'>('bridesmaids');
 
-  const bridesmaids = [
+  const bridesmaids: PartyMember[] = [
     { name: "Alyssa Rotkiewicz", role: "Matron of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/alyssa.jpg" },
     { name: "Sarah Castellano", role: "Maid of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/SarahC.jpeg" },
     { name: "Lauryn Kukic", role: "Bridesmaid", relation: "Friend of the Bride", photo: "/photos/wedding-party/LaurynK.jpg" },
-    { name: "Brianna Buckley", role: "Bridesmaid", relation: "Sister of the Bride", photo: "/photos/wedding-party/brianna.jpg" },
+    { name: "Brianna Buckley", role: "Bridesmaid", relation: "Sister of the Bride", photo: "/photos/wedding-party/BriannaB.JPG", objectPosition: "center 20%"  },
     { name: "Helene Buckley", role: "Bridesmaid", relation: "Sister-in-law of the Bride", photo: "/photos/wedding-party/helene.jpg" },
   ];
 
-  const groomsmen = [
+  const groomsmen: PartyMember[] = [
     { name: "Gus Richter", role: "Best Man", relation: "Brother of the Groom", photo: "/photos/wedding-party/gus.jpg" },
     { name: "Gavin Foy", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/gavin.jpg" },
     { name: "Brad Borodaty", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/brad.jpg" },
@@ -21,7 +29,7 @@ export default function WeddingParty() {
     { name: "Josh Gyurnek", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/josh.jpg" },
   ];
 
-  const kids = [
+  const kids: PartyMember[] = [
     { name: "Joanna Buckley", role: "Flower Girl", relation: "Niece of the Bride", photo: "/photos/wedding-party/joanna.jpg" },
     { name: "Madeline Buckley", role: "Flower Girl", relation: "Niece of the Bride", photo: "/photos/wedding-party/madeline.jpg" },
     { name: "Zachary Buckley", role: "Ring Bearer", relation: "Nephew of the Bride", photo: "/photos/wedding-party/zachary.jpg" },
@@ -73,6 +81,7 @@ export default function WeddingParty() {
                 alt={person.name}
                 fill
                 className="object-cover"
+                style={{ objectPosition: person.objectPosition || 'center' }}
                 sizes="(max-width: 768px) 50vw, 33vw"
               />
             </div>
