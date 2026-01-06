@@ -63,7 +63,8 @@ export default function Registry() {
           If you&apos;d prefer to contribute to our honeymoon adventure, we would be incredibly grateful. Your generosity will help us create unforgettable memories together.
         </p>
         
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 max-w-2xl mx-auto">          <div className="bg-white/50 p-2 md:p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 max-w-2xl mx-auto">          
+            <div className="bg-white/50 p-2 md:p-4 rounded-lg transition-transform duration-300 hover:scale-105">
             <p className="text-xs md:text-sm font-medium text-primary mb-2 md:mb-3">Venmo</p>
             <div className="relative w-16 h-16 md:w-24 md:h-24 mx-auto bg-white rounded-lg overflow-hidden">
               <Image

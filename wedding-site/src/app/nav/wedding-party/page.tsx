@@ -25,7 +25,7 @@ export default function WeddingParty() {
     { name: "Gus Richter", role: "Best Man", relation: "Brother of the Groom", photo: "/photos/wedding-party/gus.jpg" },
     { name: "Gavin Foy", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/gavin.jpg" },
     { name: "Brad Borodaty", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/brad.jpg" },
-    { name: "Aaron Dill", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/aaron.jpg" },
+    { name: "Aaron Dill", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/AaronD.jpeg", objectPosition: "center 40%"  },
     { name: "Josh Gyurnek", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/josh.jpg" },
   ];
 
