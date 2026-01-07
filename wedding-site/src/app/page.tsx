@@ -1,8 +1,9 @@
 "use client";
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Loading from '../components/Loading';
+import Navigation from '../components/Navigation';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,6 +14,12 @@ export default function Home() {
     minutes: 0,
     seconds: 0
   });
+
+  const detailsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToDetails = () => {
+    detailsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     const weddingDate = new Date('2026-07-25').getTime();
@@ -102,6 +109,8 @@ export default function Home() {
   return (
     <>
       {isLoading && <Loading onLoadingComplete={handleLoadingComplete} />}
+
+      <Navigation variant="hamburger" />
       
       <div className={`transition-opacity duration-700 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
         <section className="relative h-screen w-full">
@@ -127,7 +136,11 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 animate-bounce z-10">
+          <button 
+            onClick={scrollToDetails}
+            className="absolute bottom-16 left-1/2 -translate-x-1/2 animate-bounce z-10 cursor-pointer bg-transparent border-none p-2 hover:scale-110 transition-transform duration-200"
+            aria-label="Scroll to wedding details"
+          >
             <svg 
               className="w-8 h-8 text-white" 
               fill="none" 
@@ -136,7 +149,7 @@ export default function Home() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
-          </div>
+          </button>
         </section>
 
         <div className="relative h-[40px] md:h-[70px] -mt-[40px] md:-mt-[70px] z-10 overflow-hidden">
@@ -168,7 +181,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative">
+        <section className="relative" ref={detailsRef}>
           <div className="w-full overflow-hidden leading-[0] bg-secondary -mb-[1px]">
             <svg 
               data-name="Layer 1" 

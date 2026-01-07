@@ -26,7 +26,7 @@ export default function WeddingParty() {
     { name: "Gavin Foy", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/gavin.jpg" },
     { name: "Brad Borodaty", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/brad.jpg" },
     { name: "Aaron Dill", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/AaronD.jpeg", objectPosition: "center 40%"  },
-    { name: "Josh Gyurnek", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/josh.jpg" },
+    { name: "Josh Gyurnek", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/JoshG.jpeg" },
   ];
 
   const kids: PartyMember[] = [
