@@ -47,23 +47,9 @@ export default function Navigation({ variant = 'header' }: NavigationProps) {
   }, [isOpen, variant]);
 
 
-  const HamburgerButton = () => (
+  const HamburgerButton = ({ fixed = false }: { fixed?: boolean }) => (
     <button
-      className="hamburger-button fixed top-6 right-6 z-50 p-2"
-      onClick={() => setIsOpen(!isOpen)}
-      aria-label="Toggle navigation menu"
-    >
-      <div className="w-6 h-5 relative">
-        <span className={`absolute left-0 w-full h-0.5 rounded transition-all duration-300 ${variant === 'hamburger' ? 'bg-secondary' : 'bg-primary'} ${isOpen ? 'top-1/2 -translate-y-1/2 rotate-45 !bg-secondary' : 'top-0'}`}></span>
-        <span className={`absolute left-0 top-1/2 -translate-y-1/2 w-full h-0.5 rounded transition-all duration-300 ${variant === 'hamburger' ? 'bg-secondary' : 'bg-primary'} ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-        <span className={`absolute left-0 w-full h-0.5 rounded transition-all duration-300 ${variant === 'hamburger' ? 'bg-secondary' : 'bg-primary'} ${isOpen ? 'top-1/2 -translate-y-1/2 -rotate-45 !bg-secondary' : 'bottom-0'}`}></span>
-      </div>
-    </button>
-  );
-
-  const InlineHamburgerButton = () => (
-    <button
-      className="hamburger-button p-2"
+      className={`hamburger-button p-2 ${fixed ? 'fixed top-6 right-6 z-50' : ''}`}
       onClick={() => setIsOpen(!isOpen)}
       aria-label="Toggle navigation menu"
     >
@@ -105,7 +91,7 @@ export default function Navigation({ variant = 'header' }: NavigationProps) {
   if (variant === 'hamburger') {
     return (
       <>
-        <HamburgerButton />
+        <HamburgerButton fixed />
         <SlideOutMenu />
       </>
     );
@@ -121,7 +107,7 @@ export default function Navigation({ variant = 'header' }: NavigationProps) {
         </div>
 
         <div className="md:hidden">
-          <InlineHamburgerButton />
+          <HamburgerButton />
         </div>
 
         <div className="hidden md:flex gap-8">
