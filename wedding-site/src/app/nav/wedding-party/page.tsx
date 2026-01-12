@@ -14,7 +14,7 @@ export default function WeddingParty() {
   const [activeTab, setActiveTab] = useState<'bridesmaids' | 'groomsmen' | 'kids'>('bridesmaids');
 
   const bridesmaids: PartyMember[] = [
-    { name: "Alyssa Rotkiewicz", role: "Matron of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/alyssa.jpg" },
+    { name: "Alyssa Rotkiewicz", role: "Matron of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/AlyssaR.jpg", objectPosition:"center 40%" },
     { name: "Sarah Castellano", role: "Maid of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/SarahC.jpeg" },
     { name: "Lauryn Kukic", role: "Bridesmaid", relation: "Friend of the Bride", photo: "/photos/wedding-party/LaurynK.jpg" },
     { name: "Brianna Buckley", role: "Bridesmaid", relation: "Sister of the Bride", photo: "/photos/wedding-party/BriannaB.JPG", objectPosition: "center 20%"  },
@@ -22,9 +22,9 @@ export default function WeddingParty() {
   ];
 
   const groomsmen: PartyMember[] = [
-    { name: "Gus Richter", role: "Best Man", relation: "Brother of the Groom", photo: "/photos/wedding-party/gus.jpg" },
-    { name: "Gavin Foy", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/gavin.jpg" },
-    { name: "Brad Borodaty", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/brad.jpg" },
+    { name: "Gus Richter", role: "Best Man", relation: "Brother of the Groom", photo: "/photos/wedding-party/GusR.jpg", objectPosition: "center 40%"  },
+    { name: "Gavin Foy", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/GavinF.png", objectPosition: "40% 20%"  },
+    { name: "Brad Borodaty", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/BradB.jpg" },
     { name: "Aaron Dill", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/AaronD.jpeg", objectPosition: "center 40%"  },
     { name: "Josh Gyurnek", role: "Groomsman", relation: "Friend of the Groom", photo: "/photos/wedding-party/JoshG.jpeg" },
   ];
