@@ -18,7 +18,7 @@ export default function WeddingParty() {
     { name: "Sarah Castellano", role: "Maid of Honor", relation: "Friend of the Bride", photo: "/photos/wedding-party/SarahC.jpeg" },
     { name: "Lauryn Kukic", role: "Bridesmaid", relation: "Friend of the Bride", photo: "/photos/wedding-party/LaurynK.jpg" },
     { name: "Brianna Buckley", role: "Bridesmaid", relation: "Sister of the Bride", photo: "/photos/wedding-party/BriannaB.JPG", objectPosition: "center 20%"  },
-    { name: "Helene Buckley", role: "Bridesmaid", relation: "Sister-in-law of the Bride", photo: "/photos/wedding-party/helene.jpg" },
+    { name: "Helene Buckley", role: "Bridesmaid", relation: "Sister-in-law of the Bride", photo: "/photos/wedding-party/HeleneB.jpg" },
   ];
 
   const groomsmen: PartyMember[] = [
@@ -30,9 +30,9 @@ export default function WeddingParty() {
   ];
 
   const kids: PartyMember[] = [
-    { name: "Joanna Buckley", role: "Flower Girl", relation: "Niece of the Bride", photo: "/photos/wedding-party/joanna.jpg" },
-    { name: "Madeline Buckley", role: "Flower Girl", relation: "Niece of the Bride", photo: "/photos/wedding-party/madeline.jpg" },
-    { name: "Zachary Buckley", role: "Ring Bearer", relation: "Nephew of the Bride", photo: "/photos/wedding-party/zachary.jpg" },
+    { name: "Joanna Buckley", role: "Flower Girl", relation: "Niece of the Bride", photo: "/photos/wedding-party/JoannaB.jpeg" },
+    { name: "Madeline Buckley", role: "Flower Girl", relation: "Niece of the Bride", photo: "/photos/wedding-party/MadelineB.jpeg" },
+    { name: "Zachary Buckley", role: "Ring Bearer", relation: "Nephew of the Bride", photo: "/photos/wedding-party/ZacharyB.jpeg" },
   ];
 
   const tabs = [
