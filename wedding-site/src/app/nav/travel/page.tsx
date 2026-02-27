@@ -8,16 +8,15 @@ export default function Travel() {
           <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">Hotel Block</h2>
           <div className="space-y-4 text-primary">
             <div>
-              <p className="font-medium text-lg">Hotel Name</p>
-              <p className="text-primary/70">123 Hotel Address, Detroit, MI 48201</p>
+              <p className="font-medium text-lg">Detroit Marriott at the Renaissance Center</p>
+              <p className="text-primary/70">400 Renaissance Drive, Detroit, MI 48243</p>
             </div>
             <div className="flex flex-col sm:flex-row sm:gap-8">
-              <p><span className="text-primary/60">Phone:</span> (313) 555-0000</p>
-              <p><span className="text-primary/60">Group Code:</span> RICHTER2026</p>
+              <p><span className="text-primary/60">Phone:</span> (313) 568-8000</p>
             </div>
             <div>
               <a 
-                href="#" 
+                href="https://book.passkey.com/e/51211406"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-primary text-secondary px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
@@ -25,7 +24,7 @@ export default function Travel() {
                 Book Your Room
               </a>
             </div>
-            <p className="text-primary/70 italic">Please book by [Date] to secure the group rate.</p>
+            <p className="text-primary/70 italic">Please book by Friday, June 26, 2026 to secure the group rate.</p>
           </div>
         </div>
 
@@ -59,25 +58,25 @@ export default function Travel() {
         </div>
 
         <div className="bg-secondary p-8 md:p-10 rounded-lg shadow-md">
-          <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">Things To Do in Detroit</h2>
+          <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">J & H's Things To Do in Detroit</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h3 className="font-medium text-lg text-primary mb-3">Restaurants</h3>
               <ul className="space-y-2 text-primary/80">
-                <li>• Restaurant Name 1</li>
-                <li>• Restaurant Name 2</li>
-                <li>• Restaurant Name 3</li>
+                <li>• <a href="https://www.highlandsdetroit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">The Highlands</a></li>
+                <li>• <a href="https://www.johnnynoodleking.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Johnny Noodle King</a></li>
+                <li>• <a href="https://adelinadetroit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Adelina</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="font-medium text-lg text-primary mb-3">Attractions</h3>
               <ul className="space-y-2 text-primary/80">
-                <li>• Detroit Institute of Arts</li>
-                <li>• Motown Museum</li>
-                <li>• Eastern Market</li>
-                <li>• Detroit Riverwalk</li>
+                <li>• <a href="https://www.dia.org/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Detroit Institute of Arts</a></li>
+                <li>• <a href="https://www.motownmuseum.org/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Motown Museum</a></li>
+                <li>• <a href="https://easternmarket.org/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Eastern Market</a></li>
+                <li>• <a href="https://detroitriverfront.org/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Detroit Riverwalk</a></li>
               </ul>
             </div>
           </div>
