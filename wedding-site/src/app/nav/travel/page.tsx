@@ -22,16 +22,16 @@ function HotelDetailsModal({ onClose }: { onClose: () => void }) {
         <h3 className="text-2xl font-serif text-primary mb-6">Hotel Details</h3>
 
         <ol className="space-y-4 text-primary/80 list-decimal list-inside">
-          <li><span className="font-medium text-primary">Parking:</span> I would advise guests to park in Beaubien Garage, which offers in-and-out privileges to hotel guests for a flat rate of $25 per day and can be charged to guestrooms. Valet parking is also available for $30 daily/$40 overnight.</li>
-          <li><span className="font-medium text-primary">Check-In:</span> Our check-in time is 4:00 PM, and check-out time is 11:00 AM. For contactless arrival, we suggest Mobile Check-In and Mobile Key through the Marriott Bonvoy app if you&apos;re a Bonvoy member.</li>
-          <li><span className="font-medium text-primary">Food & Beverage:</span> Our hotel restaurant and bar, Fuell, is currently open daily for breakfast, lunch, and dinner. We also have the Motor City Pantry open daily from 6:00 AM – midnight, which offers grab-and-go options. Illy Cafe is currently open daily from 6:00 AM - 1:00 PM.</li>
-          <li><span className="font-medium text-primary">Housekeeping:</span> Our hotel has resumed providing daily stayover housekeeping service. If you need extra towels or any additional amenities, they are available at the front desk for pick-up, or you may dial &quot;0&quot; from any house phone to request these items be delivered to your hotel room.</li>
-          <li><span className="font-medium text-primary">Wi-Fi:</span> $14.95 a day. Complimentary Basic Internet in guest rooms with individual Bonvoy membership. You can join by using this link:{" "}
+          <li><span className="font-medium text-primary">Parking:</span> The hotel recommends parking in Beaubien Garage, which offers in-and-out privileges for hotel guests at a flat rate of $25 per day, chargeable to your room. Valet parking is also available for $30 daily or $40 overnight.</li>
+          <li><span className="font-medium text-primary">Check-In:</span> Check-in is at 4:00 PM and check-out is at 11:00 AM. If you&apos;re a Marriott Bonvoy member, the hotel suggests using Mobile Check-In and Mobile Key through the Bonvoy app for a contactless arrival experience.</li>
+          <li><span className="font-medium text-primary">Food & Beverage:</span> The hotel&apos;s restaurant and bar, Fuell, is open daily for breakfast, lunch, and dinner. Motor City Pantry offers grab-and-go options daily from 6:00 AM – midnight, and Illy Cafe is open daily from 6:00 AM – 1:00 PM.</li>
+          <li><span className="font-medium text-primary">Housekeeping:</span> The hotel provides daily stayover housekeeping service. If you need extra towels or additional amenities, you can pick them up at the front desk or dial &quot;0&quot; from any house phone to have items delivered to your room.</li>
+          <li><span className="font-medium text-primary">Wi-Fi:</span> Wi-Fi is $14.95 per day, but is complimentary for Marriott Bonvoy members. You can sign up for free using this link:{" "}
             <a href="http://www.joinmarriottbonvoy.com/DTWDT" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary transition-colors">
               joinmarriottbonvoy.com/DTWDT
             </a>
           </li>
-          <li><span className="font-medium text-primary">Cancellation Policy:</span> Cancellations must be made 48 hours prior to arrival. Please note that we will assess a one-night fee if you cancel after the deadline.</li>
+          <li><span className="font-medium text-primary">Cancellation Policy:</span> Cancellations must be made at least 48 hours before arrival. A one-night fee will be charged for any cancellations made after that deadline.</li>
         </ol>
       </div>
     </div>
