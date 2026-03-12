@@ -19,8 +19,7 @@ export default function FAQ() {
     },
     {
       question: "What if I don't RSVP on time?",
-      // WILL HAVE TO UPDATE THE TIME SPAN WHEN WE HAVE THE INFO
-      answer: "We will reach out with a text or email reminder to anyone who has not RSVP'd by the date provided. One week prior to the wedding, anyone who still has not RSVP'd will be marked \"not attending\". We love everyone invited and will miss celebrating with you, but we must give our vendors accurate numbers and meal choices by their deadline to ensure that our wedding continues according to schedule."
+      answer: "We will reach out with a text or email reminder to anyone who has not RSVP'd by May 18th 2026. On June 1st 2026, anyone who still has not RSVP'd will be marked \"not attending\". We love everyone invited and will miss celebrating with you, but we must give our vendors accurate numbers and meal choices by their deadline to ensure that our wedding continues according to schedule."
     },
     {
       question: "Are children allowed?",

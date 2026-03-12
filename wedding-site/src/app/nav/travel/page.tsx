@@ -5,10 +5,8 @@ import { useState } from "react";
 function HotelDetailsModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop */}
       <div className="absolute inset-0 bg-black/50" onClick={onClose} />
 
-      {/* Modal */}
       <div className="relative bg-secondary rounded-lg shadow-xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-8 z-10">
         <button
           onClick={onClose}
