@@ -32,7 +32,7 @@ export default function Schedule() {
             <div className="flex justify-center items-center gap-4">
               <span className="text-primary font-serif text-lg">Ceremony</span>
               <span className="text-primary/60">—</span>
-              <span className="text-primary/80">Time - Time</span>
+              <span className="text-primary/80">5:30 PM - 6 PM</span>
             </div>
             
             <p className="text-primary/60 italic">Cocktail hour to follow</p>
@@ -40,7 +40,7 @@ export default function Schedule() {
             <div className="flex justify-center items-center gap-4">
               <span className="text-primary font-serif text-lg">Reception</span>
               <span className="text-primary/60">—</span>
-              <span className="text-primary/80">Time - Time</span>
+              <span className="text-primary/80">7 PM - Midnight</span>
             </div>
           </div>
         </div>

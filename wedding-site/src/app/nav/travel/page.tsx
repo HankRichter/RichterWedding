@@ -81,7 +81,9 @@ export default function Travel() {
           <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">Shuttle Service</h2>
           <div className="text-primary">
             <p className="text-primary/80">
-              Shuttle service will be provided between the hotel and venue. Details coming soon...
+              Lavdas Limosuine will provide shuttle service between the hotel and wedding venue on the day of the wedding.
+              {/* The shuttle will run from 4:45 PM to 5:15 PM, then again from 9 PM to Midnight. */}
+              {/* UPDATE: need to confirm times */}
             </p>
           </div>
         </div>
@@ -113,7 +115,7 @@ export default function Travel() {
             <div>
               <h3 className="font-medium text-lg text-primary mb-3">Restaurants</h3>
               <ul className="space-y-2 text-primary/80">
-                <li>• <a href="https://www.highlandsdetroit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">The Highlands</a></li>
+                <li>• <a href="https://basandetroit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Basan</a></li>
                 <li>• <a href="https://www.johnnynoodleking.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Johnny Noodle King</a></li>
                 <li>• <a href="https://adelinadetroit.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline transition-colors">Adelina</a></li>
               </ul>

@@ -7,7 +7,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: "Is there parking at the venue?",
-      answer: "Yes! The Whiskey Factory has a private gated parking lot on site for guests to use. If this lot runs out of space, there will be a secondary lot across/down the street and will instruct guests how to access it if needed."
+      answer: "Yes! The Whiskey Factory has a private gated parking lot on site for guests to use. If this lot runs out of space, there will be a secondary lot across/down the street and will instruct guests how to access it if needed. There will be a shuttle service from the hotel to the Whiskey Factory."
     },
     {
       question: "What is the dress code?",
