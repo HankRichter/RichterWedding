@@ -66,7 +66,7 @@ export default function Home() {
     {
       title: 'RSVP',
       description: 'Let us know if you can make it to celebrate our special day with us.',
-      href: '/nav/rsvp',
+      href: 'https://jaimeandhank2026.rsvpify.com/',
       icon: (
         <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -113,7 +113,7 @@ export default function Home() {
       <Navigation variant="hamburger" />
       
       <div className={`transition-opacity duration-700 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
-        <section className="relative h-screen w-full">
+        <section className="relative h-screen w-full -mb-1">
           <Image 
             src="/photos/homepage/Hank&Jamie-99.jpg" 
             alt="Jaime and Hank" 
@@ -181,7 +181,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative" ref={detailsRef}>
+        <section className="relative -mt-2" ref={detailsRef}>
           <div className="w-full overflow-hidden leading-[0] bg-secondary -mb-[1px]">
             <svg 
               data-name="Layer 1" 
@@ -242,9 +242,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <div className="h-20 md:h-28 bg-secondary"></div> */}
-
-        <section className="py-16 px-4 bg-secondary">
+        <section className="py-16 px-4 bg-secondary -mt-1">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 text-center text-primary">Our Story</h2>
             <div className="flex justify-center">

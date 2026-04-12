@@ -69,6 +69,8 @@ export default function WeddingParty() {
         ))}
       </div>
 
+      {/* UPDATE: need to look into centering the bottom two for groomsmen and bridesmaids. */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
         {getActiveData().map((person) => (
           <div 
