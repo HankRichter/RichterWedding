@@ -67,6 +67,7 @@ export default function Home() {
       title: 'RSVP',
       description: 'Let us know if you can make it to celebrate our special day with us.',
       href: 'https://jaimeandhank2026.rsvpify.com/',
+      target: '_blank' as const,
       icon: (
         <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -205,6 +206,8 @@ export default function Home() {
                   <Link 
                     key={card.title}
                     href={card.href}
+                    target={card.target}
+                    rel={card.target === '_blank' ? 'noopener noreferrer' : undefined}
                     className="bg-secondary backdrop-blur-sm border border-secondary rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-8 hover:bg-secondary/90 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300 ease-out group cursor-pointer"
                   >
                     <div className="text-primary group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 flex-shrink-0">
