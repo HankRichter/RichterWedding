@@ -69,13 +69,11 @@ export default function WeddingParty() {
         ))}
       </div>
 
-      {/* UPDATE: need to look into centering the bottom two for groomsmen and bridesmaids. */}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-8">
         {getActiveData().map((person) => (
-          <div 
-            key={person.name} 
-            className="bg-secondary rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          <div
+            key={person.name}
+            className="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-22px)] bg-secondary rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
             <div className="relative aspect-square">
               <Image
