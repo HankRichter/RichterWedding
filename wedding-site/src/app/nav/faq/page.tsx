@@ -11,7 +11,7 @@ export default function FAQ() {
     },
     {
       question: "What is the dress code?",
-      answer: "Our wedding is cocktail attire. A suit or a dress shirt with a tie is suggested. A midi- or knee-length dress, dressy separates, or a dressy jumpsuit are also welcome."
+      answer: "Our wedding is cocktail attire. A suit or a dress shirt with a tie is suggested. A midi- or longer dress, dressy separates, or a dressy jumpsuit are also welcome."
     },
     {
       question: "Can I bring a guest/plus-one?",
