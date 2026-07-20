@@ -55,7 +55,7 @@ export default function Travel() {
             <div className="flex flex-col sm:flex-row sm:gap-8">
               <p><span className="text-primary/60">Phone:</span> (313) 568-8000</p>
             </div>
-            <div>
+            {/* <div>
               <a 
                 href="https://book.passkey.com/e/51211406"
                 target="_blank" 
@@ -64,27 +64,26 @@ export default function Travel() {
               >
                 Book Your Room
               </a>
-            </div>
-      <p className="text-primary/70 italic">
-        Please book by Friday, June 26, 2026 to secure the group rate.{" "}
-        <button
-          onClick={() => setShowHotelModal(true)}
-          className="underline hover:text-primary transition-colors"
-        >
-          View hotel details
-        </button>
-      </p>
+            </div> */}
+            {/* <p className="text-primary/70 italic">
+              Please book by Friday, June 26, 2026 to secure the group rate.{" "}
+              <button
+                onClick={() => setShowHotelModal(true)}
+                className="underline hover:text-primary transition-colors"
+              >
+                View hotel details
+              </button>
+            </p> */}
           </div>
         </div>
 
         <div className="bg-secondary p-8 md:p-10 rounded-lg shadow-md">
           <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">Shuttle Service</h2>
           <div className="text-primary">
-            <p className="text-primary/80">
-              Lavdas Limosuine will provide shuttle service between the hotel and wedding venue on the day of the wedding.
-              {/* The shuttle will run from 4:45 PM to 5:15 PM, then again from 9 PM to Midnight. */}
-              {/* UPDATE: need to confirm times */}
-            </p>
+            <p className="text-primary/80">Lavdas Limousine will provide shuttle service between the hotel and venue on the day of the wedding  with a sign saying Allcorn/Richter wedding.</p><br/>
+            <p className="text-primary/80"><b>Pick up times:</b> <br/> 4:45 PM <br/> 5:15 PM</p> <br/>
+            <p className="text-primary/80"><b>Return times:</b> <br/> Continuous starting at 9:30 PM till 11:45 PM as the last shuttle.</p>
+            {/* <p className="text-primary/80">There will be two pick up times before the ceremony from the hotel: 4:45 PM to 5:15 PM. The shuttle will run again from 9:30 PM with last shuttle at 11:45 PM.</p> */}
           </div>
         </div>
 
